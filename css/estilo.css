@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+/*
+Autores: Anderson Silva, Rafael Roslan;
+Data inicio: 15/04/2021;
+
+Lembrente:
+    >separar os item por comentario;
+*/
+
+/* Fonte */
+
+@font-face {
+    font-family: Brasilero2018Free;
+    src: url('../fontes/Brasilero2018Free.otf');
+}
+
+@font-face {
+    font-family: BubblegumSansRegular;
+    src: url('../fontes/BubblegumSansRegular.otf');
+}
+
+/*------ELEMENTOS HTML PRINCIPAIS------*/
+
+nav,
+ul,
+li,
+header {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../imagens/background.png);
+    background-repeat: repeat;
+}
+
+header,
+footer {
+    border: 0 solid;
+}
+
+nav,
+footer {
+    width: 1200px;
+    background: #95A866;
+}
+
+header {
+    height: 320px;
+    border-radius: 25px 25px 0 0;
+}
+
+main {
+    background-color: #f0f4c3;
+}
+
+footer {
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+}
+
+/*nav*/
+nav {
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    width: 142px;
+    height: 50px;
+    float: left;
+
+}
+
+li a {
+    display: block;
+    padding: 12px 2px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Brasilero2018Free;
+    font-size: 25px
+}
+
+p a {
+    text-decoration: none;
+    color: black;
+}
+
+/*edicao do texto do site*/
+
+h2,
+h3,
+p,
+small,
+td,
+th {
+    font-family: BubblegumSansRegular;
+}
+
+p {
+    font-size: 22px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+small {
+    font-size: 16px;
+}
+
+
+
+/*tabelas*/
+table {
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+    background: white;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+th {
+    background: #95A866;
+}
+
+/*imagem*/
+img {
+    border-radius: 25px;
+}
+
+/*-----HOVERS-----*/
+li:hover {
+    background-color: #e3c419;
+}
+
+tr:hover {
+    background-color: #c3d39c;
+}
+
+p a:hover {
+    text-decoration-line: underline;
+}
+
+/*-----CLASSES-----*/
+.main_container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.container {
+    margin: 0px;
+    padding: 10px 50px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    flex-flow: column wrap;
+}
+
+.selecao {
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    width: 900px;
+    /*feito apenas para a pagina de selecao de personagem*/
+}
+
+.personagem {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.caixa {
+    margin: 0px;
+    padding: 20px;
+    width: auto;
+    /*para manter o padrao da página*/
+}
+
+.centralizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*centraliza todo conteudo tanto na horizontal, quanto na vertical*/
+}
+
+.sombra {
+
+    box-shadow: 0 0 1em 0.5em black;
+    border: 0px solid;
+    border-radius: 25px;
+}
+
+.bordabanner {
+    border: 0 solid;
+    border-radius: 25px 25px 0 0;
+}
+
+.icone {
+    padding: 5px;
+}
+
+.alinhamento {
+    text-align: right;
+}
+
+.personagens {
+    display: flex;
+    width: 500px;
+    padding: 20px 0px;
+}
+
+.referencia {
+    display: flex;
+    flex-flow: wrap;
+    width: 1100px;
+    justify-content: center;
+
+}
+
+.cardaluno {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*cartoes*/
+.card {
+    display: flex;
+    background-color: #ffffee;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.estilo1 {
+
+    flex-flow: wrap;
+    width: 300px;
+}
+
+.estilo2 {
+    width: 450px;
+    height: 270px;
+}
+
+.estilo3 {
+    width: 500px;
+    flex-flow: wrap;
+}
+
+/*linha vertical*/
+.vl {
+    border-left: 2px solid darkgray;
+    height: 530px;
+}
+
+/*tabela*/
+.tableator {
+    padding-top: 50px;
+}
+
+.tablefim td {
+    border-bottom: 0px;
+}
+
+
+
+
+.largura {
+    width: 64px;
+}
+
+.largura a {
+    padding: 7px;
+}
+
+.home {
+    border-radius: 0px;
+}
+
+
+.alimg {
+    display: flex;
+    flex-flow: wrap;
+    width: 300px;
+    padding: 0 0 0 770px;
+    justify-content: center;
+}
+
+.posicionamento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textoformulario {
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: BubblegumSansRegular;
+
+}
+
+.enviar {
+    width: 33%;
+    margin: 10px 0 0 335px;
+    align-items: flex-end;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 18px;
+    resize: none;
+    font-family: BubblegumSansRegular;
+}
